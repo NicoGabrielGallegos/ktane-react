@@ -1,0 +1,174 @@
+/* Module */
+.the-button-module {
+    justify-content: space-evenly;
+}
+
+.the-button {
+    display: flex;
+    border: 1px solid white;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.the-button-none {
+    border-color: transparent;
+}
+
+.the-button-yellow {
+    border-color: var(--yelllow);
+}
+
+.the-button-red {
+    border-color: var(--red)
+}
+
+.the-button-blue {
+    border-color: var(--blue)
+}
+
+.the-button-white {
+    border-color: var(--white)
+}
+
+.the-button-text {
+    margin: auto;
+    font-size: 40px;
+    font-weight: 1000;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: .5px;
+    pointer-events: none;
+    letter-spacing: 2px;
+}
+
+.colored-strip {
+    border: 1px solid white;
+    width: 40px;
+    height: 250px;
+    border-radius: 8px;
+}
+
+.colored-strip-none {
+    border-color: var(--black);
+}
+
+.colored-strip-yellow {
+    border-color: var(--yelllow);
+}
+
+.colored-strip-red {
+    border-color: var(--red)
+}
+
+.colored-strip-blue {
+    border-color: var(--blue)
+}
+
+.colored-strip-white {
+    border-color: var(--white)
+}
+
+/* Solver */
+.the-button-radio-group, .strip-radio-group, .text-radio-group {
+    display: flex;
+    align-items: center;
+    margin: 8px;
+}
+
+.the-button-radio, .strip-radio, .text-radio {
+    appearance: none;
+    border: 1px solid;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    margin: 4px 0 4px 8px;
+    text-align: center;
+    vertical-align: middle;
+    display: grid;
+    place-content: center;
+    cursor: pointer;
+}
+
+.text-radio {
+    margin: 0 0 0 4px;
+    cursor: inherit;
+}
+
+.the-button-radio::before, .strip-radio::before, .text-radio::before {
+    content: "";
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    box-shadow: inset 1em 1em var(--white);
+    transform: scale(0);
+}
+
+.the-button-radio:hover:before, .strip-radio:hover:before, .text-radio:hover:before {
+    transform: scale(1);
+    opacity: 0.5;
+}
+
+.the-button-radio:checked:before, .strip-radio:checked:before, .text-radio:checked:before {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.text-radio-label {
+    display: flex;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid white;
+    border-radius: 32px;
+    padding: 8px;
+    margin: 0 0 0 8px;
+}
+
+.text-radio-label:hover {
+    border-color: #646cff;
+    cursor: pointer;
+}
+
+.radio-none {
+    color: transparent;
+}
+
+.radio-yellow {
+    color: var(--yelllow);
+}
+
+.radio-red {
+    color: var(--red)
+}
+
+.radio-blue {
+    color: var(--blue)
+}
+
+.radio-black {
+    color: var(--black)
+}
+
+.radio-white {
+    color: var(--white)
+}
+
+.radio-yellow::before {
+    box-shadow: inset 1em 1em var(--yelllow);
+}
+
+.radio-red::before {
+    box-shadow: inset 1em 1em var(--red);
+}
+
+.radio-blue::before {
+    box-shadow: inset 1em 1em var(--blue);
+}
+
+.radio-black::before {
+    box-shadow: inset 1em 1em var(--black);
+}
+
+.radio-white::before {
+    box-shadow: inset 1em 1em var(--white);
+}

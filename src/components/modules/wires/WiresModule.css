@@ -1,0 +1,179 @@
+/* Module */
+.wires-module {
+    justify-content: space-between;
+}
+
+.wires-support {
+    display: grid;
+    margin: 5% 10%;
+    width: 48px;
+    border: 1px solid white;
+    border-radius: 8px;
+    align-self: end;
+}
+
+.wires-support-left {
+    height: 90%;
+}
+
+.wires-support-right {
+    height: 70%;
+}
+
+.wires-connector {
+    width: 24px;
+    height: 24px;
+    margin: auto;
+    border: 1px solid white;
+    border-radius: 8px;
+}
+
+.wire {
+    align-self: start;
+    position: absolute;
+    border: 1px solid;
+    background-color: #242424;
+    height: 16px;
+    border-radius: 16px;
+    pointer-events: none;
+    transform-origin: 9px 9px;
+}
+
+.wire-none {
+    border: none;
+    background-color: transparent;
+}
+
+.wire-yellow {
+    border-color: var(--yelllow);
+}
+
+.wire-red {
+    border-color: var(--red)
+}
+
+.wire-blue {
+    border-color: var(--blue)
+}
+
+.wire-black {
+    border-color: var(--black)
+}
+
+.wire-white {
+    border-color: var(--white)
+}
+
+/* Solver */
+.wires-solver-button {
+    padding: 0 8px;
+    margin: 4px;
+    height: 24px;
+    justify-self: center;
+    display: inline-block;
+    color: white;
+    background-color: transparent;
+    border-radius: 16px;
+    border: 1px solid white;
+}
+
+.wires-solver-button, .wires-solver-button:hover, .wires-solver-button:active, .wires-solver-button:focus {
+    display: inline-block;
+    outline: 0;
+}
+
+.wires-solver-button:hover {
+    border: 1px solid #3fff59;
+}
+
+.wires-solution {
+    text-wrap: wrap;
+    max-width: 340px;
+}
+
+.wire-radio-group {
+    display: flex;
+    align-items: center;
+    margin: 8px;
+}
+
+.wire-radio {
+    appearance: none;
+    border: 1px solid;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    margin: 4px 0 4px 8px;
+    text-align: center;
+    vertical-align: middle;
+    display: grid;
+    place-content: center;
+    cursor: pointer;
+}
+
+.wire-radio-none {
+    color: transparent;
+}
+
+.wire-radio-yellow {
+    color: var(--yelllow);
+}
+
+.wire-radio-red {
+    color: var(--red)
+}
+
+.wire-radio-blue {
+    color: var(--blue)
+}
+
+.wire-radio-black {
+    color: var(--black)
+}
+
+.wire-radio-white {
+    color: var(--white)
+}
+
+.wire-radio::before {
+    content: "";
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    box-shadow: inset 1em 1em var(--white);
+    transform: scale(0);
+}
+
+.wire-radio:hover:before {
+    transform: scale(1);
+    opacity: 0.5;
+}
+
+.wire-radio:checked:before {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.wire-radio-none:checked:before {
+    transform: scale(1);
+}
+
+.wire-radio-yellow::before {
+    box-shadow: inset 1em 1em var(--yelllow);
+}
+
+.wire-radio-red::before {
+    box-shadow: inset 1em 1em var(--red);
+}
+
+.wire-radio-blue::before {
+    box-shadow: inset 1em 1em var(--blue);
+}
+
+.wire-radio-black::before {
+    box-shadow: inset 1em 1em var(--black);
+}
+
+.wire-radio-white::before {
+    box-shadow: inset 1em 1em var(--white);
+}

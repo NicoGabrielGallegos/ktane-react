@@ -1,0 +1,115 @@
+:root {
+    --module: #999999;
+    --yelllow: rgb(223, 177, 53);
+    --red: rgb(207, 40, 48);
+    --blue: rgb(38, 93, 241);
+    --black: rgb(8, 8, 8);
+    --white: rgb(194, 194, 194);
+
+    --button-hover: #646cff;
+    --button-green: #3fff59;
+    --button-red: #ff3f3f;
+}
+
+/* Module */
+.module {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+    width: 400px;
+    height: 400px;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 8px;
+}
+/* Module */
+
+/* Solver */
+.solver-context {
+    display: flex;
+}
+
+.solver {
+    display: grid;
+    margin: auto 8px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.solver-button {
+    padding: 0 8px;
+    margin: 4px;
+    height: 24px;
+    justify-self: center;
+    display: inline-block;
+    color: white;
+    background-color: transparent;
+    border-radius: 16px;
+    border: 1px solid white;
+}
+
+.solver-button, .solver-button:hover, .solver-button:active, .solver-button:focus {
+    display: inline-block;
+    outline: 0;
+}
+
+.solver-button:hover {
+    border: 1px solid #3fff59;
+}
+/* Solver */
+
+/* Custom Radio */
+.custom-radio-group {
+    display: flex;
+    align-items: center;
+    margin: 8px;
+}
+
+.custom-radio {
+    appearance: none;
+    border: 1px solid;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    margin: 4px 0 4px 8px;
+    text-align: center;
+    vertical-align: middle;
+    display: grid;
+    place-content: center;
+}
+
+.custom-radio::before {
+    content: "";
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    box-shadow: inset 1em 1em var(--white);
+    transform: scale(0);
+}
+
+.custom-radio:hover:before {
+    transform: scale(1);
+    opacity: 0.5;
+}
+
+.custom-radio:checked:before {
+    transform: scale(1);
+    opacity: 1;
+}
+/* Custom Radio */
+
+.rounded-small-button {
+    padding: 0;
+    margin: 4px;
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    color: white;
+    background-color: #3f3f3f00;
+    border-radius: 16px;
+    border: 1px solid white;
+}
+
+.rounded-small-button, .rounded-small-button:hover, .rounded-small-button:active, .rounded-small-button:focus {
+    display: inline-block;
+    outline: 0;
+}

@@ -1,0 +1,61 @@
+.batteries-container {
+    display: inline-block;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 16px;
+    border-radius: 16px;
+    border: 1px solid white;
+}
+
+.battery {
+    font-family: inherit;
+    height: 32px;
+    margin: 2px 0 2px 0;
+}
+
+.battery-title {
+    padding-bottom: 16px;
+    border-bottom: 1px solid white;
+    margin-bottom: 16px;
+}
+
+.battery-type {
+    display: inline-block;
+    color: white;
+    width: 32px;
+    padding: 4px;
+    text-align: start;
+}
+
+.battery-quantity {
+    display: inline-block;
+    color: white;
+    width: 32px;
+    padding: 4px;
+    text-align: center;
+    margin: 0px 2px 0px 2px;
+}
+
+.battery-button {
+    padding: 0;
+    margin: 4px;
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    color: white;
+    background-color: #3f3f3f00;
+    border-radius: 16px;
+    border: 1px solid white;
+}
+
+.battery-button, .battery-button:hover, .battery-button:active, .battery-button:focus {
+    display: inline-block;
+    outline: 0;
+}
+
+.battery-sub:hover {
+    border: 1px solid #ff3f3f;
+}
+
+.battery-add:hover {
+    border: 1px solid #3fff59;
+}

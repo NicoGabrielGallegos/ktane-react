@@ -1,0 +1,70 @@
+.serial-number-container {
+    display: inline-block;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 16px;
+    border-radius: 16px;
+    border: 1px solid white;
+    width: 190px;
+}
+
+.serial-number {
+    display: flex;
+    font-family: inherit;
+    height: 32px;
+    margin: 2px 0 2px 0;
+    justify-content: space-between;
+}
+
+.serial-number-title {
+    padding-bottom: 16px;
+    border-bottom: 1px solid white;
+    margin-bottom: 16px;
+}
+
+.serial-number-text-input {
+    display: inline-block;
+    font-family: inherit;
+    width: 4rem;
+    margin-right: 8px;
+    margin-left: auto;
+    text-align: center;
+}
+
+.serial-number-text-input, .serial-number-text-input:hover, .serial-number-text-input:active, .serial-number-text-input:focus {
+    border: 1px solid #6d6d6d;
+    outline: 0;
+}
+
+.serial-number-text-input:focus {
+    border-color: #646cff;
+    border-style: solid;
+}
+
+.serial-number-text {
+    display: inline-block;
+    color: white;
+    width: 64px;
+    padding: 4px;
+    text-align: start;
+}
+
+.serial-number-button {
+    padding: 0;
+    margin: 4px;
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    color: white;
+    background-color: #3f3f3f00;
+    border-radius: 16px;
+    border: 1px solid white;
+}
+
+.serial-number-button, .serial-number-button:hover, .serial-number-button:active, .serial-number-button:focus {
+    display: inline-block;
+    outline: 0;
+}
+
+.serial-number-create:hover {
+    border: 1px solid #646cff;
+}
